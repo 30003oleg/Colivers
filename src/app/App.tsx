@@ -1,11 +1,12 @@
-import React from "react";
 import styles from "./App.module.scss";
 import { LobbyPage } from "./pages/LobbyPage";
+import { DefaultHeader } from "./modules/DefaultHeader";
 
 function App() {
   return (
     <div className={styles.app}>
-      <LobbyPage className="page" />
+      <DefaultHeader onBurgerMenuClick={() => {}} onUserMenuClick={() => {}} />
+      <LobbyPage className={styles.page} />
     </div>
   );
 }

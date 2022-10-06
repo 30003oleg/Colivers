@@ -1,5 +1,21 @@
+@import './global.scss';
+
 .app {
-  text-align: center;
+    max-width: 425px;
+    max-height: 1100px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media (min-width: map-get($breakpoints, 'mobile-l')) {
+      max-width: 390px;
+      margin-top: 10%;
+      min-height: 70vh;
+      background-color: white;
+      box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
 }
 
 .page {
