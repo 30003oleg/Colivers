@@ -1,16 +1,16 @@
-import React from "react";
 import styles from "./App.module.scss";
 import { LobbyPage } from "./pages/LobbyPage";
 import PersonalPage from "../components/PersonalPage";
+import { DefaultHeader } from "./modules/DefaultHeader";
 
 function App() {
   return (
     <div className={styles.app}>
-      <LobbyPage className="page" />
-      <div className="page__personal">
-        <PersonalPage/>
-      </div>
+      <DefaultHeader onBurgerMenuClick={() => {}} onUserMenuClick={() => {}} />
+      <LobbyPage className={styles.page} />
+      <PersonalPage/>
     </div>
+    
   );
 }
 
