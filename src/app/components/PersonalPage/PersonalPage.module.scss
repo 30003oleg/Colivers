@@ -1,4 +1,4 @@
-.personalPage{
+.wrapper{
     box-sizing: border-box;
     margin-top:100px;
     background-color: #dc9cfd;
@@ -12,15 +12,15 @@
         transition: 0.5s;
     }
     
-    &__main-info{
+    .mainInfo{
         display: flex;
 
     }
 
-    &__title{
+    .title{
         margin-bottom: 30px;
     }
-    &__avatar{
+    .avatar{
         
         img{
             border-radius: 50%;
@@ -29,7 +29,7 @@
             
         }
     }
-    &__name{
+    .name{
        span{
         font-size: 20px;
        }
@@ -37,38 +37,21 @@
         margin-right: 5px;
        }
     }
-    &__friends{
+    .friends,
+    .posts {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         margin: auto;
         width: 70px;
-        height: 70px;
-        span{
-            font-size: 20px;
-        }
-        span:first-child{
-            margin-bottom: 10px;
-        }    
-
+        height: 60px;
+        font-size: 20px;
     }
-    &__posts{
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: 70px;
-        height: 70px;
-        span{
-            font-size: 20px;
-        }
-        span:first-child{
-            margin-bottom: 10px;
-        }    
-    }
-    &__about{
+    .about{
         margin:50px auto;
         text-align: left;
         padding-left: 15px;
-        &-title{
+        .title{
             font-size: 30px;
         }
         form{
@@ -76,7 +59,7 @@
             flex-direction: column;
             
         }
-        textarea{
+        textarea {
             margin-top:20px;
             flex-direction: row;
             height: auto;
@@ -88,7 +71,7 @@
         
         }
     }
-    &__closeButton{
+    .closeButton {
         width: 40px;
         height: 40px;
         position: absolute;
